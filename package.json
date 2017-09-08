@@ -1,0 +1,31 @@
+{
+  "name": "fh-mobile-core",
+  "version": "0.1.0",
+  "description": "Core SDK for the FeedHenry Mobile Control Panel",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "typings": "dist/main.d.ts",
+  "scripts": {
+    "test": "./node_modules/ts-node/dist/bin.js tests/tests.ts",
+    "dist": "rm -rf dist/* && ./node_modules/typescript/bin/tsc",
+    "prepublish": "npm test && npm run dist"
+  },
+  "keywords": [
+    "feedhenry",
+    "mobile",
+    "sdk"
+  ],
+  "author": "Aiden Keating <akeating@redhat.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2"
+  },
+  "devDependencies": {
+    "@types/tape": "^4.2.30",
+    "tape": "^4.8.0",
+    "ts-loader": "^2.3.6",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.2",
+    "webpack": "^3.5.6"
+  }
+}
