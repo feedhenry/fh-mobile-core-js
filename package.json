@@ -1,6 +1,6 @@
 {
   "name": "@akeating-redhat/fh-mobile-core",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Core SDK for the FeedHenry Mobile Control Panel",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
