@@ -41,6 +41,7 @@ export class DefaultServiceConfig implements ServiceConfig {
    * @returns {*} Configuration for the service
    */
   getConfigFor(serviceName: string): any {
-    return this.configuration[serviceName].config;
+    const service = this.configuration[serviceName];
+    return service && service.config ? service.config : null;
   }
 }
